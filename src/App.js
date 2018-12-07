@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div style={{ height: "300px", position: "relative" }}>
+      <div style={{ height: "900px", position: "relative" }}>
         <Layout fixedHeader>
           <Header
             className="header-color"
@@ -19,6 +19,7 @@ class App extends Component {
             }
           >
             <Navigation>
+              <Link to="/">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
@@ -27,6 +28,7 @@ class App extends Component {
           </Header>
           <Drawer title="Title">
             <Navigation>
+              <Link to="/">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
